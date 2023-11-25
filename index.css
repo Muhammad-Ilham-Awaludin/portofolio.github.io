@@ -123,7 +123,10 @@ header {
 
 .img img {
     width: 350px;
-    /* padding: 0 20px; */
+}
+
+.text {
+    margin-left: 20px;
 }
 
 .text h1 {
@@ -146,8 +149,8 @@ header {
     font-size: 20px;
     color: white;
     line-height: 28px;
-    margin: 30px 0 45px 0;
-    max-width: 480;
+    margin: 10px 0 20px 0;
+    /* max-width: 480; */
 }
 
 .buttom2 {
@@ -206,7 +209,7 @@ header {
 }
 
 .box1 svg {
-    margin: 20px 0 0 30%;
+    margin: 20px 0 0 33%;
 }
 
 .box1 h2 {
@@ -233,7 +236,7 @@ header {
 }
 
 .box2 svg {
-    margin: 20px 0 0 30%;
+    margin: 20px 0 0 33%;
 }
 
 .box2 h2 {
@@ -268,32 +271,27 @@ header {
     font-size: 30px;
 }
 
-.social {
+.whatsapp {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.instagram {
     display: flex;
     justify-content: center;
 }
 
-.whatsapp {
-    margin-right: 20px;
-}
-
-.instagram {
-    margin-left: 20px;
-}
-
 .alamat {
-    border: 5px solid white;
-    transition: 0.5s;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
-.alamat:hover {
-    border: 5px solid red;
-}
-
-/* Media Query for Max Width 768px */
+/* Media Query untuk lebar maksimum 768px */
 @media only screen and (max-width: 768px) {
     header {
-        padding: 0 15px;
+        padding: 0 10px;
     }
 
     .header-right {
@@ -336,12 +334,9 @@ header {
     }
 }
 
-/* ... (Kode CSS Anda yang tidak berubah) ... */
-
 /* Media Query untuk Lebar Maksimum 412px */
 @media only screen and (max-width: 412px) {
-    /* Aturan CSS yang akan diterapkan pada layar dengan lebar maksimum 412px */
-
+    
     header {
         padding: 0 15px;
         font-size: 20px;
@@ -349,6 +344,23 @@ header {
 
     .header-right {
         font-size: 30px;
+        margin-top: 10px;
+    }
+
+    ul {
+        float: right;
+        list-style-type: none;
+        margin-top: 30px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 10px;
+        border: 1px solid;
+        transition: 0.6s;
+        margin: 5px;
+        font-size: 10px;
     }
 
     .info {
@@ -375,8 +387,19 @@ header {
         font-size: 15px;
     }
 
+    .section2 {
+        flex-direction: column;
+        height: auto;
+    }
+
     .img img {
         max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .text {
+        margin-left: 5px;
     }
 
     .text h1 {
@@ -388,20 +411,50 @@ header {
         max-width: 100%;
     }
 
+    .buttom {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+    }
+
     .buttom2 {
         font-size: 16px;
     }
 
-    .box1,
+    .box1 {
+        height: auto;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
     .box2 {
         height: auto;
         width: 100%;
         margin-bottom: 10px;
     }
 
-    .box1 h2,
+    .box1 svg {
+        margin: 20px 0 0 20%;
+    }
+
+    .box1 h2 {
+        font-size: 16px;
+    }
+
+    .box2 svg {
+        margin: 20px 0 0 20%;
+    }
+
     .box2 h2 {
         font-size: 16px;
+    }
+
+    .box1 p {
+        font-size: 10px;
+    }
+
+    .box2 p {
+        font-size: 10px;
     }
 
     .social {
