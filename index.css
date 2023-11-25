@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+/* section 1 */
+
+.section1 {
+    height: 100vh;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    border: 1px solid;
+    transition: 0.6s;
+    margin: 10px;
+
+}
+
+ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+header {
+    width: auto;
+    height: 80px;
+    /* background-color: #333; */
+    border-bottom: 2px solid white;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-right {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 16px 0;
+    float: left;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.info {
+    margin-left: 7%;
+    margin-top: 6%;
+    font-size: 50px;
+    color: white;
+}
+
+.info span {
+    color: red;
+}
+
+.buttom {
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    transform: translate(-50%-50%);
+    float: right;
+    margin-top: 10%;
+    font-size: 25px;
+}
+
+.buttom a {
+    background-color: black;
+}
+
+.btn1 {
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    transition: 1s ease;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: black;
+}
+
+/* section 2 */
+
+.section2 {
+    /* display: flex; */
+    /* height: 100vh; */
+    border-top: 2px solid white;
+}
+
+.about {
+    width: 78%;
+    height: 100vh;
+    padding: 0 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Poppins";
+}
+
+.img img {
+    width: 350px;
+    /* padding: 0 20px; */
+}
+
+.text h1 {
+    font-size: 50px;
+    color: white;
+    position: relative;
+}
+
+.text h1::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 4px;
+    background-color: red;
+    left: 0;
+    bottom: 2px;
+}
+
+.text p {
+    font-size: 20px;
+    color: white;
+    line-height: 28px;
+    margin: 30px 0 45px 0;
+    max-width: 480;
+}
+
+.buttom2 {
+    font-size: 25px;
+}
+
+.buttom2 a {
+    background-color: black;
+}
+
+.btn2 {
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    transition: 1s ease;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.btn2:hover {
+    background-color: white;
+    color: black;
+}
+
+/* section 3 */
+
+.section3 {
+    height: 100vh;
+    border-top: 2px solid white;
+}
+
+.section3 h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.box-top {
+    justify-content: center;
+    margin-top: 60px;
+    display: flex;
+}
+
+.box1 {
+    border: 2px solid white;
+    height: 410px;
+    width: 350px;
+    margin-right: 5px;
+    transition: 0.5s;
+}
+
+.box1:hover {
+    border: 2px solid red;
+}
+
+.box1 svg {
+    margin: 20px 0 0 30%;
+}
+
+.box1 h2 {
+    text-align: center;
+    color: red;
+    font-size: 30px;
+}
+
+.box1 p {
+    text-align: center;
+    color: white;
+}
+
+.box2 {
+    border: 2px solid white;
+    height: 410px;
+    width: 350px;
+    margin-right: 5px;
+    transition: 0.5s;
+}
+
+.box2:hover {
+    border: 2px solid red;
+}
+
+.box2 svg {
+    margin: 20px 0 0 30%;
+}
+
+.box2 h2 {
+    text-align: center;
+    color: red;
+    font-size: 30px;
+}
+
+.box2 p {
+    text-align: center;
+    color: white;
+}
+
+/* section 4 */
+
+.section4 {
+    height: 100vh;
+    border-top: 2px solid white;
+    color: white;
+}
+
+
+.section4 h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.section4 h2 {
+    padding-top: 60px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.whatsapp {
+    margin-right: 20px;
+}
+
+.instagram {
+    margin-left: 20px;
+}
+
+.alamat {
+    border: 5px solid white;
+    transition: 0.5s;
+}
+
+.alamat:hover {
+    border: 5px solid red;
+}
+
+/* Media Query for Max Width 768px */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 0 15px;
+    }
+
+    .header-right {
+        font-size: 40px;
+    }
+
+    .info {
+        font-size: 30px;
+        margin-top: 40%;
+    }
+
+    .buttom {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 50%;
+        font-size: 16px;
+    }
+
+    .btn1 {
+        padding: 10px 15px;
+        font-size: 25px;
+    }
+
+    .btn2 {
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+
+    .img img {
+        max-width: 200%;
+    }
+
+    .text {
+        margin-left: 17%;
+    }
+
+    .text h1 {
+        font-size: 30px;
+    }
+}
+
+/* ... (Kode CSS Anda yang tidak berubah) ... */
+
+/* Media Query untuk Lebar Maksimum 412px */
+@media only screen and (max-width: 412px) {
+    /* Aturan CSS yang akan diterapkan pada layar dengan lebar maksimum 412px */
+
+    header {
+        padding: 0 15px;
+        font-size: 20px;
+    }
+
+    .header-right {
+        font-size: 30px;
+    }
+
+    .info {
+        margin-left: 5%;
+        margin-top: 35%;
+        font-size: 30px;
+    }
+
+    .buttom {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 10%;
+        font-size: 14px;
+    }
+
+    .btn1 {
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+
+    .btn2 {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    .img img {
+        max-width: 100%;
+    }
+
+    .text h1 {
+        font-size: 24px;
+    }
+
+    .text p {
+        font-size: 12px;
+        max-width: 100%;
+    }
+
+    .buttom2 {
+        font-size: 16px;
+    }
+
+    .box1,
+    .box2 {
+        height: auto;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .box1 h2,
+    .box2 h2 {
+        font-size: 16px;
+    }
+
+    .social {
+        margin: 15px;
+    }
+}
